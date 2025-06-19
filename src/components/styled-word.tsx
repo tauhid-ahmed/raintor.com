@@ -1,7 +1,7 @@
 export default function StyledWord({ children }: React.PropsWithChildren) {
   return (
     <span className="relative inline-flex items-center z-10">
-      <span className="relative z-10 px-2 text-white leading-[1.3]">
+      <span className="relative z-10 px-2 text-white pt-5 pb-2 leading-none">
         {children}
       </span>
       <span
