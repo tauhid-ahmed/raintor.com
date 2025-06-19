@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #c5ff41;
+  --color-secondary: #c5ffee;
+  --color-grey-100: #fff;
+  --color-grey-200: #e4e4e4;
+  --color-grey-300: #757575;
+  --color-grey-700: #292d32;
+  --color-grey-800: #141414;
+  --color-grey-900: #000;
+}
+
+@theme inline {
+  --color-background: var(--color-grey-100);
+  --color-foreground: var(--color-grey-900);
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-grey-100: var(--color-grey-100);
+  --color-grey-200: var(--color-grey-200);
+  --color-grey-300: var(--color-grey-300);
+  --color-grey-700: var(--color-grey-700);
+  --color-grey-800: var(--color-grey-800);
+  --color-grey-900: var(--color-grey-900);
+  --font-sans: var(--font-sporting-grotesque);
+
+  --spacing-8xl: 87rem;
+
+  --text-h1: 4.875rem;
+  --text-h1--line-height: 7.875rem;
+  --text-h1--letter-spacing: -0.14625rem;
+  --text-h1--font-weight: 700;
+
+  --text-h2: 4rem;
+  --text-h2--line-height: 4rem;
+  --text-h2--letter-spacing: -0.14625rem;
+  --text-h2--font-weight: 700;
+
+  --text-h3: 3.625rem;
+  --text-h3--line-height: 5.375rem;
+  --text-h3--letter-spacing: 0.10875rem;
+  --text-h3--font-weight: 700;
+
+  --text-h4: 1.625rem;
+  --text-h4--line-height: 2.125rem;
+  --text-h4--letter-spacing: 0;
+  --text-h4--font-weight: 700;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
