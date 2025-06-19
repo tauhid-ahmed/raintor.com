@@ -24,6 +24,7 @@
   --color-grey-900: var(--color-grey-900);
   --font-sans: var(--font-sporting-grotesque);
 
+  --spacing-5_5xl: 72rem;
   --spacing-8xl: 87rem;
 
   --text-h1: 4.875rem;
@@ -53,7 +54,5 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans);
+  font-family: var(--font-sporting-grotesque);
 }
