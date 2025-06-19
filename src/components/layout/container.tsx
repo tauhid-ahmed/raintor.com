@@ -1,10 +1,19 @@
 import { cn } from "@/lib/utils";
 
-type ContainerProps = {} & React.ComponentProps<"div">;
+type ContainerProps = { size?: "md" | "lg" } & React.ComponentProps<"div">;
 
-export default function Container({ children, className }: ContainerProps) {
+const sizeClasses = {
+  md: "max-w-5.5xl",
+  lg: "max-w-8xl",
+};
+
+export default function Container({
+  children,
+  className,
+  size = "lg",
+}: ContainerProps) {
   return (
-    <div className={cn("max-w-8xl w-full mx-auto px-6", className)}>
+    <div className={cn(" w-full mx-auto px-6", sizeClasses[size], className)}>
       {children}
     </div>
   );
