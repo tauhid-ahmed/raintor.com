@@ -16,7 +16,7 @@ export default function MyWorkProcess() {
                 My Work Process
               </Heading>
             </div>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {workProcessData.map((workProcess) => (
                 <WorkProcess key={workProcess.id} workProcess={workProcess} />
               ))}
