@@ -65,4 +65,5 @@ body {
   font-family: var(--font-sporting-grotesque);
   background: var(--color-color-100);
   color: var(--color-color-900);
+  overflow-x: hidden;
 }

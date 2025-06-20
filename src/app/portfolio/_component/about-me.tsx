@@ -1,5 +1,6 @@
 import { Heading, StyledWord } from "@/components";
 import { Container, Section, SectionName } from "@/components/layout";
+import { cn } from "@/lib/utils";
 
 export default function AboutMe() {
   return (
@@ -35,12 +36,41 @@ function MyClients() {
             WORKED ON
           </Heading>
         </div>
-        <div className="flex-1">
-          <span className="inline-block py-4 px-8 rounded-full border border-red-500">
-            Instagram
-          </span>
+        <div className="flex-1 relative">
+          <div className="">
+            <TechBadge className="translate-x-10 translate-y-5 rotate-12 origin-bottom-right">
+              awwwards.
+            </TechBadge>
+
+            <TechBadge className="translate-x-[120%] -translate-y-8">
+              facebook
+            </TechBadge>
+            <TechBadge className="translate-x-3/4 -translate-y-8 rotate-[20deg] origin-bottom-left -ml-2.5">
+              CSS<strong>Design</strong>Awards
+            </TechBadge>
+          </div>
+          <div className="space-x-4">
+            <TechBadge className="">csvvinner</TechBadge>
+            <TechBadge className="font-bold translate-x-7.5 origin-bottom-left translate-y-1.5 -rotate-[10deg]">
+              /thoughtworks
+            </TechBadge>
+            <TechBadge className="font-bold">AUTODESK</TechBadge>
+          </div>
         </div>
       </div>
     </Container>
+  );
+}
+
+function TechBadge({ children, className }: React.ComponentProps<"div">) {
+  return (
+    <span
+      className={cn(
+        "inline-block py-4 px-10 rounded-full border text-color-900 hover:text-color-100 hover:bg-color-900 bg-color-100",
+        className
+      )}
+    >
+      <div className="-mb-1">{children}</div>
+    </span>
   );
 }
