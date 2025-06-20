@@ -23,7 +23,7 @@ export function SectionName({ name, iconVariant }: SectionNameProps) {
         <DownArrowIcon />
       </IconPlaceholder>
       <Heading
-        className="rounded-full h-11 inline-flex items-center border border-grey-900 text-grey-900 p-1 px-4 text-center leading-none"
+        className="rounded-full h-11 inline-flex items-center border-2 border-grey-900 text-grey-900 p-1 px-4 text-center leading-none"
         as="h2"
         size="h6"
       >
