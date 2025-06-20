@@ -30,7 +30,7 @@ export default function MyWorkProcess() {
 
 function WorkProcess({ workProcess }: { workProcess: WorkProcess }) {
   return (
-    <div className="bg-card-2 hover:bg-primary rounded-3.5xl group px-8 py-11 space-y-8 hover:rotate-6 origin-bottom-right transition-transform duration-300">
+    <div className="bg-card-2 hover:bg-primary rounded-3.5xl group px-8 py-11 space-y-8 hover:rotate-6 origin-bottom-right transition-[transform_colors] duration-300">
       <div className="flex justify-between items-center">
         <WorkProcessBadge badge={workProcess.badge} />
         <Link
