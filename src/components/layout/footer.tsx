@@ -2,6 +2,8 @@ import { footerData } from "@/data/my-information";
 import Heading from "../heading";
 import Container from "./container";
 import Section from "./section";
+import Link from "next/link";
+import { LogoIcon } from "../icons";
 
 export default function Footer() {
   return (
@@ -9,8 +11,10 @@ export default function Footer() {
       <Section className="bg-color-900 text-color-100 rounded-3.5xl py-18">
         <Container>
           <div className="flex flex-col lg:flex-row gap-10 justify-between">
-            <div className="flex-1 max-w-md">
-              <h2>devlop.me</h2>
+            <div className="flex-1 max-w-md mt-8">
+              <Link href="#">
+                <LogoIcon className="text-primary" />
+              </Link>
             </div>
             <div className="flex-1 space-y-20">
               <Heading size="h2" as="h2">
