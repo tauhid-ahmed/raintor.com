@@ -1,17 +1,17 @@
 import { Button, StyledWord } from "@/components";
 import Heading from "@/components/heading";
 import {
-  facebookIcon,
-  Icon,
-  instagramIcon,
-  phoneIcon,
-  xIcon,
+  FacebookIcon,
+  IconPlaceholder,
+  InstagramIcon,
+  PhoneIcon,
+  XIcon,
 } from "@/components/icons";
 import { Container, Section } from "@/components/layout";
 
 export default function Banner() {
   return (
-    <Section className="[background-image:url(/images/hero-pattern.png)] bg-cover pt-52 pb-50">
+    <Section className="[background-image:url(/images/hero-pattern.png)] bg-cover pt-52 pb-50 text-color-900">
       <Container>
         <div className="max-w-5.5xl">
           <Heading as="h1" size="h1">
@@ -25,20 +25,26 @@ export default function Banner() {
                 Your trusted partner for strategy, design, and dev.
               </p>
               <Button
-                variant={"primary"}
-                icon={<Icon src={phoneIcon} alt="phone" />}
-              >
-                Schedule a Call
-              </Button>
+                icon={
+                  <IconPlaceholder
+                    variant="secondary"
+                    borderWeight="light"
+                    size="md"
+                  >
+                    <PhoneIcon />
+                  </IconPlaceholder>
+                }
+                text="Schedule a Call"
+              />
             </div>
             <div className="lg:order-1 lg:basis-[360px] shrink lg:mt-5">
               <div className="relative inline-block lg:rotate-[-90deg] lg:origin-[50%_100%]">
                 @williamrey
                 <div className="flex gap-5 items-center mt-4">
-                  <span className="w-12 h-0.5 bg-grey-900 inline-block"></span>
-                  <Icon src={facebookIcon} alt="Facebook" />
-                  <Icon src={instagramIcon} alt="Instagram" />
-                  <Icon src={xIcon} alt="X" />
+                  <span className="w-12 h-0.5 bg-color-900 inline-block" />
+                  <FacebookIcon />
+                  <InstagramIcon />
+                  <XIcon />
                 </div>
               </div>
             </div>

@@ -25,7 +25,7 @@ export default function Heading({
   return (
     <Comp
       className={cn(
-        "font-sans leading-relaxed text-foreground font-bold",
+        "font-sans leading-relaxed font-bold",
         sizesClassNames[size],
         className
       )}

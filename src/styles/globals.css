@@ -3,53 +3,36 @@
 :root {
   --color-primary: #c5ff41;
   --color-secondary: #c5ffee;
-  --color-grey-100: #fff;
-  --color-grey-200: #e4e4e4;
-  --color-grey-300: #b8b8b8;
-  --color-grey-400: #757575;
-  --color-grey-700: #292d32;
-  --color-grey-800: #141414;
-  --color-grey-900: #000;
-
-  --color-on-primary: var(--color-grey-100);
-  --color-on-secondary: var(--color-grey-900);
-  --color-background-1: var(--color-grey-100);
-  --color-background-2: var(--color-grey-800);
-  --color-background-3: var(--color-grey-900);
-  --color-on-background: var(--color-grey-100);
-  --color-on-background-1: var(--color-grey-100);
-  --color-card-1: var(--color-grey-800);
-  --color-card-2: var(--color-grey-900);
-  --color-on-card-1: var(--color-grey-100);
-  --color-on-card-2: var(--color-grey-400);
-
-  --color-foreground: var(--text-grey-900);
-  --color-foreground-inverse: var(--text-grey-100);
+  --color-color-100: #fff;
+  --color-color-200: #e4e4e4;
+  --color-color-300: #b8b8b8;
+  --color-color-400: #b2b2b2;
+  --color-color-500: #757575;
+  --color-color-600: #666;
+  --color-color-700: #292d32;
+  --color-color-800: #141414;
+  --color-color-900: #000;
 }
 
 @theme inline {
-  --color-primary: var(--color-primary);
-  --color-on-primary: var(--color-grey-100);
-  --color-secondary: var(--color-secondary);
-  --color-on-secondary: var(--color-grey-900);
-  --color-background-1: var(--color-grey-100);
-  --color-background-2: var(--color-grey-800);
-  --color-background-3: var(--color-grey-900);
-  --color-on-background: var(--color-grey-100);
-  --color-on-background-1: var(--color-grey-100);
-  --color-card-1: var(--color-grey-800);
-  --color-card-2: var(--color-grey-900);
-  --color-on-card-1: var(--color-grey-100);
-  --color-on-card-2: var(--color-grey-400);
-  --color-border: var(--color-grey-400);
-
-  --color-foreground: var(--text-grey-900);
-  --color-foreground-inverse: var(--text-grey-100);
+  --color-primary: #c5ff41;
+  --color-secondary: #c5ffee;
+  --color-color-100: #fff;
+  --color-color-200: #e4e4e4;
+  --color-color-300: #b8b8b8;
+  --color-color-400: #b2b2b2;
+  --color-color-500: #757575;
+  --color-color-600: #666;
+  --color-color-700: #292d32;
+  --color-color-800: #141414;
+  --color-color-900: #000;
 
   --font-sans: var(--font-sporting-grotesque);
 
   --spacing-15: 3.75rem;
   --spacing-3_75: 0.9375rem;
+  --spacing-13_5: 3.375rem;
+  --spacing-15: 3.75rem;
   --spacing-5_5xl: 70.25rem;
   --spacing-8xl: 87rem;
 
@@ -80,6 +63,6 @@
 
 body {
   font-family: var(--font-sporting-grotesque);
-  background: var(--color-background-1);
-  color: var(--color-foreground);
+  background: var(--color-color-100);
+  color: var(--color-color-900);
 }

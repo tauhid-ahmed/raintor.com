@@ -1,12 +1,12 @@
 import { Button, Heading } from "@/components";
-import { Icon, leftArrowIcon, rightArrowIcon } from "@/components/icons";
+import { LeftArrowIcon, RightArrowIcon } from "@/components/icons";
 import { Container, Section, SectionName } from "@/components/layout";
 import { type Skill, skillsData } from "@/data/skills";
 
 export default function MySkills() {
   return (
     <div className="px-3.75 -mt-16">
-      <Section className="bg-background-3 text-on-background rounded-xl py-15">
+      <Section className="bg-color-900 text-color-100 rounded-xl py-15">
         <Container>
           <div className="space-y-9">
             <div className="flex flex-col xl:flex-row gap-10 items-end">
@@ -45,7 +45,7 @@ function SkillHeader() {
 function SkillTextSlider() {
   return (
     <div className="xl:text-right">
-      <div className="border-b border-border pb-2">
+      <div className="border-b border-color-600 pb-2">
         <p>
           Building the worlds best marketing Your trusted partner for strategy,
           design, and dev.
@@ -58,11 +58,11 @@ function SkillTextSlider() {
 function SliderNavigation() {
   return (
     <div className="flex gap-4 justify-end">
-      <Button className="size-15">
-        <Icon className="w-9 h-6" src={leftArrowIcon} alt="Left arrow icon" />
+      <Button className="size-15 p-0" variant="secondary">
+        <LeftArrowIcon className="h-6 w-9" />
       </Button>
-      <Button className="size-15">
-        <Icon className="w-9 h-6" src={rightArrowIcon} alt="Right arrow icon" />
+      <Button className="size-15 p-0" variant="secondary">
+        <RightArrowIcon width="36px" />
       </Button>
     </div>
   );
@@ -70,12 +70,12 @@ function SliderNavigation() {
 
 function SkillCard({ skill }: { skill: Skill }) {
   return (
-    <div className="bg-card-1 rounded-3_5xl overflow-hidden px-9 py-12 hover:rotate-[10deg] duration-300 transition-transform">
+    <div className="bg-color-800 rounded-3_5xl overflow-hidden px-9 py-12 hover:rotate-[10deg] duration-300 transition-transform">
       {skill.icon}
       <Heading as="h3" size="h5" className="mt-9">
         {skill.title}
       </Heading>
-      <p className="mt-5 text-on-card-2">{skill.description}</p>
+      <p className="mt-5 text-color-300">{skill.description}</p>
     </div>
   );
 }
