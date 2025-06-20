@@ -1,5 +1,5 @@
 import { Button, Heading } from "@/components";
-import { Icon, leftArrowIcon, rightArrowIcon } from "@/components/icons";
+import { LeftArrowIcon, RightArrowIcon } from "@/components/icons";
 import { Container, Section, SectionName } from "@/components/layout";
 import { type Skill, skillsData } from "@/data/skills";
 
@@ -59,10 +59,10 @@ function SliderNavigation() {
   return (
     <div className="flex gap-4 justify-end">
       <Button className="size-15">
-        <Icon className="w-9 h-6" src={leftArrowIcon} alt="Left arrow icon" />
+        <LeftArrowIcon />
       </Button>
       <Button className="size-15">
-        <Icon className="w-9 h-6" src={rightArrowIcon} alt="Right arrow icon" />
+        <RightArrowIcon />{" "}
       </Button>
     </div>
   );

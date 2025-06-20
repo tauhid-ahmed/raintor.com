@@ -1,12 +1,6 @@
 import { Button, StyledWord } from "@/components";
 import Heading from "@/components/heading";
-import {
-  facebookIcon,
-  Icon,
-  instagramIcon,
-  phoneIcon,
-  xIcon,
-} from "@/components/icons";
+import { FacebookIcon, InstagramIcon, XIcon } from "@/components/icons";
 import { Container, Section } from "@/components/layout";
 
 export default function Banner() {
@@ -24,21 +18,16 @@ export default function Banner() {
                 Building the worlds best marketing websites for over a decade.
                 Your trusted partner for strategy, design, and dev.
               </p>
-              <Button
-                variant={"primary"}
-                icon={<Icon src={phoneIcon} alt="phone" />}
-              >
-                Schedule a Call
-              </Button>
+              <Button variant={"primary"}>Schedule a Call</Button>
             </div>
             <div className="lg:order-1 lg:basis-[360px] shrink lg:mt-5">
               <div className="relative inline-block lg:rotate-[-90deg] lg:origin-[50%_100%]">
                 @williamrey
                 <div className="flex gap-5 items-center mt-4">
                   <span className="w-12 h-0.5 bg-grey-900 inline-block"></span>
-                  <Icon src={facebookIcon} alt="Facebook" />
-                  <Icon src={instagramIcon} alt="Instagram" />
-                  <Icon src={xIcon} alt="X" />
+                  <FacebookIcon />
+                  <InstagramIcon />
+                  <XIcon />
                 </div>
               </div>
             </div>

@@ -6,7 +6,7 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   asChild?: boolean;
   className?: string;
-  variant?: "primary";
+  variant?: "primary" | "secondary";
   icon?: React.ReactNode;
 }
 
@@ -27,11 +27,6 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         {...props}
       >
-        {icon && (
-          <span className="flex items-center justify-center rounded-full aspect-square border border-grey-900 size-16 mr-3">
-            {icon}
-          </span>
-        )}
         {children}
       </Comp>
     );
