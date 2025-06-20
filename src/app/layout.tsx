@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { sportingGrotesque } from "@/fonts/sporting-grotesque";
 import "@/styles/globals.css";
-import { Footer, Header } from "@/components/layout";
 
 export const metadata: Metadata = {
   title: "Raintor.com",
@@ -18,11 +17,7 @@ export default function RootLayout({
       <body
         className={`${sportingGrotesque.variable} antialiased text-lg leading-8`}
       >
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <main className="flex-1 shrink-0 mt-20">{children}</main>
-          <Footer />
-        </div>
+        {children}
       </body>
     </html>
   );
