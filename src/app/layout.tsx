@@ -18,9 +18,11 @@ export default function RootLayout({
       <body
         className={`${sportingGrotesque.variable} antialiased text-lg leading-8`}
       >
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-1 shrink-0 mt-20">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
