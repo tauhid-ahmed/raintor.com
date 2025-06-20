@@ -179,8 +179,44 @@ export function ReactLogoIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
+export function SendIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      width={13}
+      height={13}
+      viewBox="0 0 13 13"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M6.03786 11.496L5.2439 9.13895C5.02737 8.48823 4.52212 7.96765 3.85808 7.75074L1.50508 6.95541C-0.530334 6.27576 -0.487029 3.41257 1.54839 2.77631L10.1376 0.101104C11.841 -0.419476 13.4289 1.15672 12.8948 2.84861L10.2242 11.4671C9.58902 13.4916 6.71633 13.5205 6.03786 11.496Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
+export function EnvelopeIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      width={16}
+      height={13}
+      viewBox="0 0 16 13"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M12 0H4C1.6 0 0 1.14706 0 3.82353V9.17647C0 11.8529 1.6 13 4 13H12C14.4 13 16 11.8529 16 9.17647V3.82353C16 1.14706 14.4 0 12 0ZM12.376 4.65706L9.872 6.56882C9.344 6.97412 8.672 7.17294 8 7.17294C7.328 7.17294 6.648 6.97412 6.128 6.56882L3.624 4.65706C3.368 4.45824 3.328 4.09118 3.528 3.84647C3.736 3.60176 4.112 3.55588 4.368 3.75471L6.872 5.66647C7.48 6.13294 8.512 6.13294 9.12 5.66647L11.624 3.75471C11.88 3.55588 12.264 3.59412 12.464 3.84647C12.672 4.09118 12.632 4.45824 12.376 4.65706Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
 type IconPlaceholderProps = {
-  size?: "lg" | "md" | "sm";
+  size?: "lg" | "md" | "sm" | "xs";
   variant?: "primary" | "secondary";
   borderWeight?: "bold" | "light";
 } & React.ComponentProps<"span">;
@@ -201,6 +237,7 @@ export function IconPlaceholder({
           "border-color-900 text-color-900": variant === "secondary",
           "border-2": borderWeight === "bold",
           border: borderWeight === "light",
+          "size-9": size === "xs",
           "size-11": size === "sm",
           "size-13.5": size == "md",
           "size-15": size == "lg",
