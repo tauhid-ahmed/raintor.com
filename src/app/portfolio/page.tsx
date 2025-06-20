@@ -1,3 +1,4 @@
+import { Footer } from "@/components/layout";
 import AboutMe from "./_component/about-me";
 import Banner from "./_component/banner";
 import Contact from "./_component/contact";
@@ -12,6 +13,7 @@ export default function PortfolioPage() {
       <AboutMe />
       <MyWorkProcess />
       <Contact />
+      <Footer />
     </>
   );
 }
