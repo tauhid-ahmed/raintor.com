@@ -13,7 +13,6 @@ export default function PortfolioPage() {
       <AboutMe />
       <MyWorkProcess />
       <Contact />
-      <Footer />
     </>
   );
 }
