@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function MyWorkProcess() {
   return (
     <div className="px-3.75">
-      <Section className="bg-background-2 text-on-background rounded-3.5xl py-20">
+      <Section className="bg-color-800 text-color-100 rounded-3.5xl py-20">
         <Container>
           <div className="space-y-18">
             <div className="flex gap-20 items-center">
@@ -30,7 +30,7 @@ export default function MyWorkProcess() {
 
 function WorkProcess({ workProcess }: { workProcess: WorkProcess }) {
   return (
-    <div className="bg-card-2 hover:bg-primary rounded-3.5xl group px-8 py-11 space-y-8 hover:rotate-6 origin-bottom-right transition-[transform_colors] duration-300">
+    <div className="bg-color-900 hover:bg-primary rounded-3.5xl group px-8 py-11 space-y-8 hover:rotate-6 origin-bottom-right transition-[transform_colors] duration-300">
       <div className="flex justify-between items-center">
         <WorkProcessBadge badge={workProcess.badge} />
         <Link
@@ -51,7 +51,7 @@ function WorkProcess({ workProcess }: { workProcess: WorkProcess }) {
 function WorkProcessBadge({ badge }: { badge: string }) {
   return (
     <span className="inline-block text-on-secondary">
-      <span className="leading-[0] relative z-10 bg-secondary rounded-full px-9 pt-3 pb-2 text-xl group-hover:bg-card-2 group-hover:text-on-card-1">
+      <span className="leading-[0] relative z-10 bg-secondary text-color-900 rounded-full px-9 pt-3 pb-2 text-xl group-hover:bg-color-900 group-hover:text-color-100">
         {badge}
       </span>
     </span>

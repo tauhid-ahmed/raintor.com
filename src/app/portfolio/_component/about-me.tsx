@@ -7,7 +7,7 @@ export default function AboutMe() {
       <Container>
         <div className="space-y-10">
           <div className="text-right w-full space-y-10 max-w-5.5xl">
-            <SectionName name="About" iconVariant="black" />
+            <SectionName name="About" iconVariant="secondary" />
             <Heading as="h3" size="h1">
               I&apos;ve been&nbsp;<StyledWord>Developing</StyledWord>
               &nbsp;Websites since&nbsp;<StyledWord>2013</StyledWord>

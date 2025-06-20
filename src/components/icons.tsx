@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils";
+
 export function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
@@ -116,11 +118,10 @@ export function PhoneIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
 export function RightArrowIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
-      width={37}
-      height={24}
       viewBox="0 0 37 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -135,6 +136,7 @@ export function RightArrowIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
 export function ReactLogoIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
@@ -174,5 +176,39 @@ export function ReactLogoIcon(props: React.SVGProps<SVGSVGElement>) {
       />
       <circle cx="54.817" cy="56.2155" r={7} fill="#C5FF41" />
     </svg>
+  );
+}
+
+type IconPlaceholderProps = {
+  size?: "lg" | "md" | "sm";
+  variant?: "primary" | "secondary";
+  borderWeight?: "bold" | "light";
+} & React.ComponentProps<"span">;
+
+export function IconPlaceholder({
+  size = "lg",
+  children,
+  className,
+  variant = "primary",
+  borderWeight = "bold",
+}: IconPlaceholderProps) {
+  return (
+    <span
+      className={cn(
+        "inline-flex items-center justify-center rounded-full",
+        {
+          "border-color-100 text-color-100": variant === "primary",
+          "border-color-900 text-color-900": variant === "secondary",
+          "border-2": borderWeight === "bold",
+          border: borderWeight === "light",
+          "size-11": size === "sm",
+          "size-13.5": size == "md",
+          "size-15": size == "lg",
+        },
+        className
+      )}
+    >
+      {children}
+    </span>
   );
 }
