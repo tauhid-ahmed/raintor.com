@@ -4,6 +4,7 @@ import {
   FacebookIcon,
   IconPlaceholder,
   InstagramIcon,
+  PhoneIcon,
   SendIcon,
   XIcon,
 } from "@/components/icons";
@@ -15,7 +16,7 @@ export default function Contact() {
   return (
     <Section className="[background-image:url(/images/contact-bg.png)] [background-size:100%_auto] py-20">
       <Container>
-        <div className="flex flex-col lg:flex-row gap-4">
+        <div className="flex flex-col lg:flex-row gap-10">
           <div className="flex-1">
             <SectionName name="Contact" iconVariant="secondary" />
             <Heading as="h3" size="h2" className="mt-10">
@@ -25,12 +26,19 @@ export default function Contact() {
               We start every new client interaction with an in-depth discovery
               call where we get to know each other
             </p>
-            <Button className="mt-9" variant="primary">
-              Schedule a Call
-            </Button>
+            <Button
+              className="mt-9"
+              variant="primary"
+              text=" Schedule a Call"
+              icon={
+                <IconPlaceholder variant="secondary" borderWeight="light">
+                  <PhoneIcon />
+                </IconPlaceholder>
+              }
+            />
           </div>
           <div className="flex-1">
-            <div className="bg-color-900 text-color-100 rounded-3.5xl px-8 py-14 space-y-12 max-w-lg ml-auto">
+            <div className="bg-color-900 text-color-100 rounded-3.5xl px-8 py-14 space-y-12 lg:max-w-lg ml-auto">
               <div className="flex flex-col gap-12">
                 <Input type="text" placeholder="Enter your name" />
                 <Input type="email" placeholder="Enter your email address" />
