@@ -33,7 +33,7 @@ export default function Header() {
         <div className="flex justify-between items-center py-8">
           <LogoIcon />
           <nav className="flex items-center gap-8">
-            <ul className="flex">
+            <ul className="hidden lg:flex">
               {navData.map((item) => (
                 <li key={item.id}>
                   <Link className="p-4 inline-block text-base" href={item.href}>
