@@ -14,7 +14,7 @@ import { Container, Section, SectionName } from "@/components/layout";
 
 export default function Contact() {
   return (
-    <Section className="[background-image:url(/images/contact-bg.png)] [background-size:100%_auto] py-20">
+    <Section className="[background-image:url(/images/contact-bg.png)] [background-size:100%_auto] pt-20 pb-40 -mb-8">
       <Container>
         <div className="flex flex-col lg:flex-row gap-10">
           <div className="flex-1">
