@@ -11,9 +11,7 @@
   --color-grey-800: #141414;
   --color-grey-900: #000;
 
-  --color-primary: var(--color-primary);
   --color-on-primary: var(--color-grey-100);
-  --color-secondary: var(--color-secondary);
   --color-on-secondary: var(--color-grey-900);
   --color-background-1: var(--color-grey-100);
   --color-background-2: var(--color-grey-800);
